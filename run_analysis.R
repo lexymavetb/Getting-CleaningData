@@ -84,4 +84,5 @@ tidyData    <- aggregate(finalDataNoActType[,names(finalDataNoActType) != c("act
 tidyData    <- merge(tidyData,activityType,by='activityId',all.x=TRUE)
 
 # Export Text Output
-write.table(tidyData, "./tidyData.txt",row.names=TRUE,sep="\t")
+write.table(tidyData, "./Scrubbed.txt",row.names=TRUE,sep="\t")
+
